@@ -14,10 +14,7 @@ export class App extends Component {
           <NavBar />
           <Switch>
             <Route exact path={process.env.PUBLIC_URL + "/"} component={Map} />
-            <Route
-              path={process.env.PUBLIC_URL + "/#login"}
-              component={Login}
-            />
+            <Route path={process.env.PUBLIC_URL + "/login"} component={Login} />
           </Switch>
         </Router>
       </React.Fragment>
