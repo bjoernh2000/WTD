@@ -3,6 +3,7 @@ import { Map } from "./components/Map";
 import { NavBar } from "./components/NavBar";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+import Signup from "./components/Signup";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import {
@@ -43,6 +44,7 @@ export class App extends Component {
           <Switch>
             <Route exact path={process.env.PUBLIC_URL + "/"} component={Map} />
             <Route path={process.env.PUBLIC_URL + "/login"} component={Login} />
+            <Route path={process.env.PUBLIC_URL + "/signup"} component={Signup} />
             <PrivateRoute
               authed={this.state.authed}
               path={process.env.PUBLIC_URL + "/dashboard"}
