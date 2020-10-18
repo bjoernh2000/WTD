@@ -32,7 +32,7 @@ function PrivateRoute({ component: Component, authed, ...rest }) {
 export class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { authed: true };
+    this.state = { authed: true }; // currently we're authenticated
   }
 
   render() {
